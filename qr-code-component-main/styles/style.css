@@ -1,0 +1,77 @@
+    .attribution { 
+        font-size: 11px; text-align: center; }
+    .attribution a { 
+        color: hsl(228, 45%, 44%); }
+
+
+    
+    
+    body {
+        font-family: Arial, sans-serif;
+        background-color: rgb(250, 250, 250);
+        margin: 0;
+        text-align: center;
+        overflow: hidden;
+        padding: 20px;
+        height: 100vh;
+        font-family: 'Outfit', sans-serif;
+    }
+    
+    .outer-box {
+        background-color: rgb(214, 225, 240);
+        border: 1px solid #dddddd;
+        height: 80%;
+        display: flex;
+        padding: 20px; 
+        margin: 50px 30px;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .inner-box {
+        background-color: white; 
+        padding: 20px 0 0 0; 
+        text-align: center;
+        border-radius: 20px;
+
+        width: 18rem;
+    }
+    
+    .image-now {
+        border-radius: 20px;
+        width: 250px;
+
+    } 
+
+   
+
+    .para {
+        font-size: 15px;
+        margin: 8px;
+    
+    }
+
+    .para p {
+        color: grey;
+    }
+
+    
+
+.flex-container {
+    display: flex;
+}
+
+/* Media query for mobile screens (up to 375px) */
+@media screen and (max-width: 375px) {
+    .flex-container {
+        display: block; 
+    }
+}
+
+/* Media query for desktop screens (from 376px to 1440px) */
+@media screen and (min-width: 376px) and (max-width: 1440px) {
+    .flex-container {
+        display: flex;
+    }
+}
