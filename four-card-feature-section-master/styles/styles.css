@@ -70,6 +70,7 @@ body{
     background-color: white;
     border-radius: 10px;
     margin-left: 80px;
+    margin-right: 20px;
     height: 40%;
     width: 70%;
     border: 1.5px yellow;
@@ -104,7 +105,7 @@ body{
     background-color: white;
     border-radius: 15px;
     height: 40%;
-    /* width: 100%; */
+    width: 90%;
     padding: 20px;
     margin-top: 20px;
     display: flex;
@@ -122,6 +123,7 @@ body{
     padding: 20px;
     display: flex;
     flex-direction: column;
+    margin-left: 20px;
     justify-content: space-between;
     border-top: 4px solid blue;
 }
@@ -132,8 +134,25 @@ body{
 }
 .card1>div>h2{
     margin: 10px;
-    color: gray;
+    
 }
 .card1>div>p{
     margin: 10px;
+}
+
+.nav>h2>span {
+    color: gray;
+    
+}
+
+.nav>p {
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    justify-content: ;
+    height: 1em;
+    margin-top: 20px;
+    margin-left: 90px;
 }
