@@ -34,7 +34,7 @@ body{
 }
 
 .main{
-    background-color: white;
+    background-color: whitesmoke;
         border: 1px solid #dddddd;
         height: 80%;
         width: 80vw;
@@ -51,28 +51,30 @@ body{
     flex-direction: column;
     align-items: center; /* Center horizontally */
     justify-content: flex-start; /* Align content to the top */
-    background-color: white;
+    background-color: whitesmoke;
     padding: 20px;
     height: 20%;
 }
 
 .cards{
     display: flex;
-    background-color: white;
+    background-color: whitesmoke;
     height: 70%;
     gap: 20px;
     display: flex;
     justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 .card1{
-    background-color: pink;
+    background-color: white;
     border-radius: 10px;
-    height: 35%;
+    margin-left: 80px;
+    height: 40%;
     width: 70%;
+    border: 1.5px yellow;
     padding: 20px;
     display: flex;
-    flex-direction: column;
     flex-direction: column;
     justify-content: space-between;
     border-top: 4px solid aqua;
@@ -87,39 +89,41 @@ body{
 }
 
 .card2{
-    background-color: pink;
+    background-color: white;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
-    height: 35%;
+    height: 40%;
     /* width: 80%; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-top: 4px solid aqua;
+    border-top: 4px solid red;
 }
 .card3{
-    background-color: pink;
+    background-color: white;
     border-radius: 15px;
-    height: 35%;
+    height: 40%;
     /* width: 100%; */
     padding: 20px;
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-top: 4px solid aqua;
+    border-top: 4px solid yellow;
 }
 .card4{
-    background-color: pink;
+    background-color: white;
     border-radius: 10px;
-    height: 35%;
+    height: 40%;
+    margin-right: 80px;
     /* height: 40%; */
     width: 70%;
     padding: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border-top: 4px solid aqua;
+    border-top: 4px solid blue;
 }
 .svg{
     display: flex;
@@ -128,6 +132,7 @@ body{
 }
 .card1>div>h2{
     margin: 10px;
+    color: gray;
 }
 .card1>div>p{
     margin: 10px;
