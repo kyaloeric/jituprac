@@ -142,7 +142,7 @@ body{
 
 .nav>h2>span {
     color: gray;
-    
+
 }
 
 .nav>p {
@@ -151,7 +151,7 @@ body{
     align-items: center;
     text-align: center;
     display: flex;
-    justify-content: ;
+    justify-content: center;
     height: 1em;
     margin-top: 20px;
     margin-left: 90px;

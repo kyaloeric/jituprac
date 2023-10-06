@@ -1,0 +1,49 @@
+/* styles.css */
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px; /* Adjust the space between grids as needed */
+}
+
+.grid-item {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.grid-item.large {
+    grid-row: span 2; /* Span 2 rows for the first grid item */
+}
+
+.grid-item h2 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+.grid-item h3 {
+    font-size: 16px;
+    margin-top: 0;
+    color: #555;
+}
+
+.grid-item ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.grid-item ul li {
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.grid-item ul li:last-child {
+    margin-bottom: 0;
+    color: #888;
+}
+
+.grid-item ul li::before {
+    content: "• ";
+    color: #555;
+}

@@ -1,0 +1,125 @@
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: white;
+    color: #fff;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
+    margin-left: 60px;
+    padding: 0 20px;
+}
+
+.logo h1 {
+    font-size: 24px;
+    margin-right: 0px;
+    font-weight: bold;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    font-size: 16px;
+}
+
+.menu a {
+    color: gray;
+    text-decoration: none;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+.icons i {
+    font-size: 24px;
+    color: #fff;
+}
+
+/* Style the main content */
+main {
+    padding: 00px;
+    margin-top: blue;
+    display: flex;
+    justify-content: flex-end;
+    justify-content: center;
+    justify-content: space-between;
+}
+
+/* styles.css */
+
+/* Reset some default styles as previously defined */
+
+/* Style the main content */
+main {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product-grid {
+    display: grid;
+    gap: 20px;
+}
+
+.main-product {
+    grid-column: 1 / span 2; /* Span 2 columns for the large image */
+}
+
+.small-product {
+    border: 1px solid #ccc;
+    padding: 5px;
+    flex: 1;
+}
+
+/* Apply specific styles to the small product elements as needed */
+
+/* Apply styles to the product details section as previously defined */
+
+.product-details {
+    margin-top: 100px;
+    align-items: center;
+    margin-left: 0x;
+    margin-right: 30px;
+}
+
+.product-details h4{
+    color: #666;
+}
+
+.product-details h2 {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.product-details p {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+.product-icons i {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+
+
+
