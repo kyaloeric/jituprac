@@ -1,106 +1,140 @@
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
 
-body, h1, h2, h3, p, ul, li {
-    margin: 0;
-    padding: 0;
+body{
+    background-color: white;
+    margin: 0 30px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Outfit', sans-serif;;
+    font-family: 'Outfit', sans-serif; 
+    font-family: 'Poppins', sans-serif; 
+
 }
+
+
 
 header {
     background-color: white;
     color: #fff;
     padding: 10px 0;
+    display: flex;
+    align-items: center;
+    margin-bottom: 3px gray;
+    
 }
 
 nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    justify-content: flex-start;
-    margin-left: 60px;
+    width: 100%;
     padding: 0 20px;
+    margin-bottom: 5px none;
+    
 }
 
-.logo h1 {
+.logo  {
     font-size: 24px;
-    margin-right: 0px;
+    margin-left: 50px;
     font-weight: bold;
+    margin-left: 20px;
+    
 }
 
 .menu ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
+    align-items: center;
+
 }
 
-.menu li {
-    font-size: 16px;
+.nav-items {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    gap: 40px;
+    margin: 0 40px;
 }
+
 
 .menu a {
     color: gray;
     text-decoration: none;
+    float: left;
+    align-items: center;
+    
 }
 
 .icons {
-    display: flex;
-    gap: 20px;
-}
+    align-items: flex-end;
+    justify-content: flex-end;
+    }
 
 .icons i {
-    font-size: 24px;
+    font-size: 10px;
     color: #fff;
 }
 
-/* Style the main content */
 main {
-    padding: 00px;
-    margin-top: blue;
+    padding: 50px;
+    height: 60vh;
     display: flex;
-    justify-content: flex-end;
+    background-color: white;
+    margin-left: 70px;
     justify-content: center;
-    justify-content: space-between;
-}
-
-/* styles.css */
-
-/* Reset some default styles as previously defined */
-
-/* Style the main content */
-main {
     padding: 20px;
+    margin-right: 70px;
     display: flex;
     justify-content: space-between;
 }
+
 
 .product-grid {
     display: grid;
-    gap: 20px;
+
 }
 
 .main-product {
-    grid-column: 1 / span 2; /* Span 2 columns for the large image */
+    grid-column: 1 / span 2; 
+    width: 100px;
+    margin-left: 50px;
+    border-radius: 5px;
+
 }
+
+.main-product>img {
+    border-radius: 20px;
+    margin-left: 20px;
+}
+
 
 .small-product {
-    border: 1px solid #ccc;
-    padding: 5px;
+    border: 1px solid none;
+    padding: 10px;
+    justify-content: space-between;
     flex: 1;
+    margin-left: 40px;
+    border-radius: 5px;
+    margin-top: 5px;
 }
 
-/* Apply specific styles to the small product elements as needed */
+.small-product>img {
+    border-radius: 20px;
+    justify-content: space-between;
+    padding: 5px;
 
-/* Apply styles to the product details section as previously defined */
+}
+
 
 .product-details {
     margin-top: 100px;
     align-items: center;
-    margin-left: 0x;
-    margin-right: 30px;
+    margin-left: 60x;
+    margin-right: 10px;
 }
 
-.product-details h4{
+.product-details h3{
     color: #666;
 }
 
@@ -115,6 +149,7 @@ main {
     margin-top: 10px;
 }
 
+
 .product-icons i {
     font-size: 24px;
     margin-top: 10px;
@@ -123,3 +158,9 @@ main {
 
 
 
+
+.button {
+    color: orangered;
+    justify-content: flex-end;
+
+}
