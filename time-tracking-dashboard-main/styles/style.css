@@ -1,19 +1,55 @@
 /* styles.css */
 
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: white(188, 221, 250);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .dashboard {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px; /* Adjust the space between grids as needed */
+    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+    grid-gap: 25x; 
+    /* grid-template-rows: repeat(2, 1fr); */
+    grid-template-areas: 
+     'bluec bluec greyc whitec'
+     'white2 blackc blackc whitec';
+    gap:25px;
+    width: 80vw;
+    background-color: darkslateblue;
+    height: 80vh;
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 .grid-item {
     border: 1px solid #ccc;
     padding: 20px;
+    /* grid-gap: 20px; */
+    border-radius: 10px;
+
     text-align: center;
+    /* margin-top: 20px; */
+    /* margin-bottom: 40px; */
+    /* margin-right: 30px; */
+    
 }
 
 .grid-item.large {
     grid-row: span 2; /* Span 2 rows for the first grid item */
+    margin-left: 90px;
+    background-color: blueviolet;
+    
 }
 
 .grid-item h2 {
@@ -24,7 +60,7 @@
 .grid-item h3 {
     font-size: 16px;
     margin-top: 0;
-    color: #555;
+    color: white;
 }
 
 .grid-item ul {
