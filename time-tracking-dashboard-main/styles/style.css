@@ -20,8 +20,8 @@ body{
     grid-gap: 25x; 
     /* grid-template-rows: repeat(2, 1fr); */
     grid-template-areas: 
-     'bluec bluec greyc whitec'
-     'white2 blackc blackc whitec';
+     'jeremy work play study'
+     'exercise social self selfcare';
     gap:25px;
     width: 80vw;
     background-color: darkslateblue;
@@ -30,6 +30,12 @@ body{
     font-family: 'Outfit', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Rubik', sans-serif;
+}
+
+.selfcare, .study  {
+
+background-color: yellow;
+    
 }
 
 .grid-item {
