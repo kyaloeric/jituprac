@@ -13,11 +13,10 @@ body {
 
  .hero {
     position: relative;
-    width: 100vw;
+    width: 99vw;
     height: 100vh;
     flex-direction: column;
     display: flex;
-    
     top: 0;
     left: 0;
     background: url(/css-challenge/images/hero.png);
@@ -25,6 +24,7 @@ body {
     background-size: cover;
     background-position: center center;
     filter: brightness(60%);
+    overflow:hidden;
  }
 
  .hero-content {
@@ -89,7 +89,7 @@ nav{
     align-items: center;
     width: 100%;
     
-}
+}violet
 
 .menu{
     display: flex;
@@ -140,7 +140,7 @@ nav{
 
 .flex-boxes{
     display: flex;
-    background-color:yellow;
+    background-color:white;
     height: 150%;
     width: 100%;
     gap: 20px;
@@ -186,14 +186,14 @@ nav{
 
  .industry-title {
     font-size: 3rem;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 0;
-    color: white;
+    color: blackwhite;
     /* align-items: center; */
     /* justify-content: center; */
     display: flex;
-    color: white;
-    /* text-align: center; */
+    color: black;
+    text-align: center;
     margin: 0.625rem;
  }
  .industry-subtitle {
@@ -247,7 +247,7 @@ nav{
     background-color: white;
     height: 90%;
     width: 100%;
-    margin-top: 400px;
+    margin-top: 300px;
     gap: 20px;
     display: flex;
     justify-content: center;
@@ -255,7 +255,7 @@ nav{
 }
 
 .svg{
-    background-color: green;
+    background-color: white;
     justify-content: center;  
     height: 40%;
     z-index: 100;
@@ -284,3 +284,173 @@ nav{
 }
 
 
+
+
+
+.pricing {
+    display: flex;
+    background-color: white;
+    margin-top: 200px;
+    height: 400px;
+    margin-bottom: 300px;
+    flex-direction: column;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+ .pricing-title {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 0;
+    color: blackwhite;
+    /* align-items: center; */
+    /* justify-content: center; */
+    display: flex;
+    color: black;
+    text-align: center;
+    margin: 0.625rem;
+ }
+ .pricing-subtitle {
+    font-size: 18px;
+    font-weight:100;
+    margin-top: 1rem;
+    align-items: center;
+    text-align: center;
+ }
+
+.pri-boxes{
+    display: flex;
+    background-color: purple;
+    /* height: 300%; */
+    width: 100%;
+    margin-top: 200px;
+    /* margin-top: 200px; */
+    gap: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.box2{
+    background-color:yellow;
+    justify-content: center;  
+    height: 100%;
+    z-index: 100;
+    margin-bottom: 30px;
+    margin-top: 40px;
+    /* align-items: center; */
+    width: 300px;
+    border: 1.5px yellow;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+.world-map {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    flex-direction: column;
+    display: flex;
+    background-color: green;
+    top: 0;
+    left: 0;
+    /* background-color: transparent; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow:hidden;
+ }
+
+ .world-map> img{
+
+    margin-top: 40px;
+    margin-left: 900px
+   
+    
+ }
+
+ .world-content {
+    /* position: relative; */
+    font-family: "Monserrat", sans-serif;
+    color: white;
+    /* text-align: center; */
+    margin: 0.625rem;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    
+ }
+ .world-title {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 0;
+    color: white;
+ }
+ .world-subtitle {
+    font-size: 2rem;
+    font-weight:100;
+    margin-top: 1rem;
+ }
+
+
+
+ .half-sized-box{
+    display: flex;
+    /* background-color:green; */
+    height: 500px;
+    width: 100%;
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: palevioletred;
+    background-color: yellow;
+
+
+ }
+
+
+
+.contact-us {
+    margin-top: -20%;
+    background-color: red;
+    justify-content: center;  
+    height: 600px;
+    z-index: 100;
+    /* align-items: center; */
+    width: 40%;
+    /* border: 1.5px yellow; */
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+
+/* Style for the text above the text box */
+.label {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Style for the text box */
+.textbox {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+}
