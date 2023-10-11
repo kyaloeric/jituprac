@@ -650,5 +650,38 @@ color: white;
     .box{
         width: 90%;
         margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+
+    .svgs{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        margin-top: 30vh;
+
+    }
+
+    .svg{
+        width: 90%;
+        margin-top: 20px;
+
+    }
+
+    .industry{
+        margin-top: 20vh;
+    }
+
+    .indu-boxes{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+        margin-top: 20vh;
+    }
+    .box1{
+        width: 90%;
+        margin-top: 10px;
     }
 }
