@@ -111,7 +111,7 @@ nav{
 .buttons {
     display: flex;
     align-items: center;
-    width: 20%;
+    width: 30%;
     gap: 30px;
 }
 .buttons> button{
@@ -145,7 +145,6 @@ nav{
     justify-content: center;  
     height: 60%;
     z-index: 100;
-    border: 1.5px yellow;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -567,14 +566,69 @@ color: white;
     margin-bottom: 10px;
 }
 
-.textbox {
-    width: 300px;
-    padding: 10px;
-    font-size: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    outline: none;
+
+
+.agency{
+    display: flex;
+    align-items: center;
+    gap: 30vw;
+    justify-content: center;
+    /* justify-content: space-between; */
+    
 }
+
+.agency> .sub-button{
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 3px;
+}
+
+
+.textbox {
+    /* width: 300px; */
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    background-color: white;
+    
+    font-size: 16px;
+    display: flex;
+    /* border: 1px solid #ccc; */
+    outline: none;
+    
+}
+
+.textbox> section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d2671;
+
+}
+
+
+.section> ul{
+    list-style: none;
+    align-items: center;
+    gap: 40px;
+
+  
+}
+
+.section> ul li{
+    display: flex;
+    padding: 10px;
+    margin-left: -40px;
+    gap: 40px;
+}
+
+.section ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+
 
 .footer{
     justify-content: center;
