@@ -1,0 +1,144 @@
+.heading {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+
+
+.body{
+    background-color: yellow;
+    align-items: center;
+    justify-content: center;
+}
+
+.maincalc {
+
+    border: 1px solid #cccccc;
+
+    border-radius: 20px;
+
+    position: relative;
+    justify-content: center;
+    /* align-items: center; */
+    /* display: flex; */
+    flex-wrap: wrap;
+
+    top: 55%;
+
+    left: 40%;
+
+
+    width: 450px;
+
+    height: 400px;
+
+}
+
+.calc-keys {
+
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-gap: 10px;
+
+    padding: 10px;
+
+    margin:auto;
+
+}
+
+.button {
+
+    height: 60px;
+
+    padding: 5px;
+
+    background-color: #fff;
+
+    border-radius: 3px;
+
+    border: 1px solid #c4c4c4;
+
+    background-color: transparent;
+
+    font-size: 3rem;
+
+    color: #333;
+
+
+}
+
+.button:hover {
+
+    background-color:whitesmoke;
+
+}
+
+.operator {
+
+    color: black;
+
+    background-color:aqua;
+    
+
+}
+
+.delete-button {
+
+    background-color: red;
+
+    border-color: #b0353a;
+
+    color: #fff;
+
+    width: 80px;
+    margin-bottom: 15px;
+
+    height: 40px;  
+    align-items: center;
+
+}
+
+
+.equal-sign {
+
+    background-color: #25a8e0;
+
+    border-color: #25a8e0;
+
+    color: #fff;
+
+}
+
+.equal-sign:hover {
+
+    background-color: yellow;
+
+}
+
+.work-area{
+
+    background-color:rgb(171, 219, 231);
+
+    justify-content: left;
+
+    color: black;
+
+    font-size: medium;
+
+    width: 50%;
+
+    height: 30%;
+
+    cursor: default;
+
+    padding: 10px; 
+
+    padding-left: 40%;
+    margin-left: 10px;
+    margin-bottom: 10px;
+
+}
+

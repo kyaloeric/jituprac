@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Todo List</title>
+    <style>
+        .completed {
+            text-decoration: line-through;
+        
+        }
+
+        li {
+            
+            justify-content: center;
+            align-items: center;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            justify-content: center;
+            height: 100vh;
+            margin-top: -200px;
+        }
+
+        h1, input, button, ul {
+            text-align: center;
+        }
+
+        ul#todoList {
+            list-style-type: none;
+            padding: 0;
+        }
+    
+
+
+    </style>
+</head>
+<body>
+    <h1>Todo List</h1>
+
+    <input type="text" id="todoInput" placeholder="Enter a new Todo">
+    <button onclick="addTodo()">Add</button>
+
+    <ul id="todoList"></ul>
+
+    <script>
+        // Load todos from local storage on page load
+        let todos = JSON.parse(localStorage.getItem('todos')) || [];
+
+        function saveTodos() {
+            localStorage.setItem('todoggggs', JSON.stringify(todos));
+        }
+
+        function addTodo() {
+            const todoInput = document.getElementById('todoInput');
+            const todoText = todoInput.value.trim();
+
+            if (todoText !== '') {
+                todos.push({ text: todoText, completed: false });
+                saveTodos();
+                updateTodoList();
+                todoInput.value = '';
+            }
+        }
+
+        function deleteTodo(index) {
+            todos.splice(index, 1);
+            saveTodos();
+            updateTodoList();
+        }
+
+        function toggleComplete(index) {
+            todos[index].completed = !todos[index].completed;
+            saveTodos();
+            updateTodoList();
+        }
+
+        function updateTitle(index) {
+            const newTitle = prompt('Enter a new title:', todos[index].text);
+            if (newTitle !== null) {
+                todos[index].text = newTitle;
+                saveTodos();
+                updateTodoList();
+            }
+        }
+
+        function updateTodoList() {
+            const todoList = document.getElementById('todoList');
+            todoList.innerHTML = '';
+
+            todos.forEach((todo, index) => {
+                const listItem = document.createElement('li');
+                listItem.innerHTML = `
+                    <input type="checkbox" ${todo.completed ? 'checked' : ''} onchange="toggleComplete(${index})">
+                    <span class="${todo.completed ? 'completed' : ''}">${todo.text}</span>
+                    <button onclick="deleteTodo(${index})">Delete</button>
+                    <button onclick="updateTitle(${index})">Edit</button>
+                `;
+                todoList.appendChild(listItem);
+            });
+        }
+
+        // Initial rendering
+        updateTodoList();
+    </script>
+</body>
+</html>
