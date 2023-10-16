@@ -1,1 +1,37 @@
-inde
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OOP Calculator</title>
+    <link rel="stylesheet" type="text/css" href="/jspracs/oop/style.css">
+</head>
+
+
+<body>
+    <h1 class="heading" >My OOP Calculator</h1>
+
+    <div class="calculator">
+        
+        <input type='text' id='result' class ='work-area' style="text-align: right;"></type>
+        
+        <div class="keys">
+            <input type="button" value="DEL" class="button" onClick="calculator.clear()"></input>
+            <input type="button" value="7" class="button" onClick="calculator.appendNumber(7)"></input>
+            <input type="button" value="8" class="button" onClick="calculator.appendNumber(8)"></input>
+            <input type="button" value="9" class="button" onClick="calculator.appendNumber(9)"></input>
+            <input type="button" value="+" class="operator" onClick="calculator.appendOperator('+')"></input>
+            <input type="button" value="4" class="button" onClick="calculator.appendNumber(4)"></input>
+            <input type="button" value="5" class="button" onClick="calculator.appendNumber(5)"></input>
+            <input type="button" value="6" class="button" onClick="calculator.appendNumber(6)"></input>
+            <input type="button" value="-" class="operator" onClick="calculator.appendOperator('-')"></input>
+            <input type="button" value="1" class="button" onClick="calculator.appendNumber(1)"></input>
+            <input type="button" value="2" class="button" onClick="calculator.appendNumber(2)"></input>
+            <input type="button" value="3" class="button" onClick="calculator.appendNumber(3)"></input>
+            <input type="button" value="*" class="operator" onClick="calculator.appendOperator('*')"></input>
+            <input type="button" value="0" class="button" onClick="calculator.appendNumber(0)"></input>
+            <input type="button" value="/" class="operator" onClick="calculator.appendOperator('/')"></input>
+            <input type="button" value="=" class="button equal-sign" onClick="calculator.calculate()"></input>
+        </div>
+    </div>
+    <script src="/jspracs/oop/calc.js"></script>
+</body>
+</html>

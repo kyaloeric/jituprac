@@ -1,6 +1,8 @@
+
+
 class Calculator {
     constructor() {
-        this.display = document.getElementById("display");
+        this.display = document.getElementById("result");
         this.clear();
     }
 
@@ -25,6 +27,7 @@ class Calculator {
         this.operation = operator;
         this.previousOperand = this.currentOperand;
         this.currentOperand = "";
+        this.updateDisplay();
     }
 
     calculate() {
@@ -56,6 +59,9 @@ class Calculator {
 
     updateDisplay() {
         this.display.value = this.currentOperand;
+        if (this.operation != null) {
+            this.display.value = `${this.previousOperand} ${this.operation} ${this.currentOperand}`;
+        }
     }
 }
 
