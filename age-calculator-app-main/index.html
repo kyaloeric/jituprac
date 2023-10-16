@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/age-calculator-app-main/styles.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@100&family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="icon" href="/age-calculator-app-main/assets/images/favicon-32x32.png" type="image/x-icon">
+
+
+    <title>Age Calculator App</title>
+</head>
+
+<body>
+    <main>
+        <div class="inputs-container">
+         
+            <div>
+                <div class="input-block">
+                    <label>day</label>
+                    <input type="number" placeholder="DD" required/>
+                    <span class="error-message"></span>
+                </div>
+                <div class="input-block">
+                    <label>month</label>
+                    <input type="number" placeholder="MM" required/>
+                    <span class="error-message"></span>
+
+                </div>
+
+                <div class="input-block">
+                    <label>year</label>
+                    <input type="number" placeholder="YYYY" min="1900" max="2024" />
+                    <span class="error-message"></span>
+
+                </div>
+            </div>
+            <hr>
+            <div id="button" id="calc-button">
+                <img src="/age-calculator-app-main/assets/images/icon-arrow.svg" alt="arrow calculate button" />
+            </div>
+        </div>
+    
+        <div class="results-container">
+            <div class="result-block">
+                <span id="years">--</span> <span>years</span>
+            </div>
+
+            <div class="result-block">
+                <span id="months">--</span> <span>months</span>
+            </div>
+
+            <div class="result-block">
+                <span id="days">--</span> <span>days</span>
+            </div>
+        </div>
+        <span id="error-message"></span>
+        <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded with ❤️ by <a href="https://www.frontendmentor.io/profile/Saad-Hisham">Eric Kyalo</a>.
+      </p>
+    </footer>
+    </main>
+
+<script src="/age-calculator-app-main/age.js"></script>
+</body>
+
+</html>
