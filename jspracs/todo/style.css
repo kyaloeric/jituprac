@@ -6,7 +6,7 @@
 }
 
 .main-area{
-    background-color: gray;
+    background-color: lightgray;
     margin-top: 40px;
     max-height: fit-content;
     width: 60vw;
@@ -51,7 +51,7 @@ h4, input, button, ul {
 }
 
 .words{
-    background-color: pink;
+    background-color: 0;
     gap: 100px;
     
 }
@@ -87,7 +87,7 @@ ul#todoList {
 
 
 .the-task-list{
-    background-color: greenyellow;
+    background-color: aquamarine;
     /* gap: 40px; */
     display: flex;
     flex-direction: column;
@@ -101,7 +101,7 @@ ul#todoList {
 }
 
 .action-buttons{
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     display: flex;
     gap: 40px;
     /* align-items: center; */
@@ -124,7 +124,7 @@ ul#todoList {
 
 
 .completee{
-    background-color: yellow;
+    background-color: lightcyan;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -154,6 +154,7 @@ ul#todoList {
     justify-content: space-between;
     background-color: red;
     border-radius: 5px;
+    color: white;
 }
 
 .edit{
@@ -161,5 +162,6 @@ ul#todoList {
     margin-left: 10px;
     background-color: green;
     border-radius: 5px;
+    color: white;
     
 }

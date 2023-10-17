@@ -94,11 +94,18 @@
     color: #fff;
 
     width: 80px;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
+    justify-content: center;
 
     height: 40px;  
     align-items: center;
 
+}
+
+.tb{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 

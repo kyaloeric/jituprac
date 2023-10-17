@@ -2,64 +2,69 @@
 let inputs = document.querySelectorAll("input");
 const errorMessage = document.querySelectorAll('.error-message');
 
-// event listener for the first input element
-inputs[0].addEventListener('input', function (event) {
-    let value = event.target.value;
-    // make sure the value is not less than 1
-    if (value < 1) {
-        if (value == 0) {
-            value = 1;
-        }
-        value = value;
-    }
-    // make sure the value is not greater than 30
-    else if (value > 30) {
-        value = 30;
-    }
-    event.target.value = value;
-});
+// Event listener for the first input element
+// inputs[0].addEventListener('input', function (event) {
+//     let value = event.target.value;
+//     // Make sure the value is not less than 1
+//     if (value < 1) {
+//         if (value == 0) {
+//             value = 1;
+//         }
+//         value = value;
+//     }
+//     // Make sure the value is not greater than 30
+//     else if (value > 30) {
+//         value = 30;
+//     }
+//     event.target.value = value;
+// });
 
-// event listener for the second input element
-inputs[1].addEventListener('input', function (event) {
-    let value = event.target.value;
-    // Ensure the value is not less than 1
-    if (value == 0) {
-        value = 1;
-    }
-    // Ensure the value is not greater than 12
-    if (value < 12) {
-        value = value;
-    }
-    else if (value > 12) {
-        value = 12;
-    }
-    event.target.value = value;
-});
+// // Event listener for the second input element
+// inputs[1].addEventListener('input', function (event) {
+//     let value = event.target.value;
+//     // Ensure the value is not less than 1
+//     if (value == 0) {
+//         value = 1;
+//     }
+//     // Ensure the value is not greater than 12
+//     if (value < 12) {
+//         value = value;
+//     }
+//     else if (value > 12) {
+//         value = 12;
+//     }
+//     event.target.value = value;
+// });
 
 // Event listener for the third input element
-inputs[2].addEventListener('input', function (event) {
-    let value = event.target.value;
-    // Ensure the value is not less than 1
-    if (value == 0) {
-        value = 1;
-    }
-    // Ensure the value is not greater than the current year
-    if (value < 2022) {
-        value = value;
-    }
-    else if (value > year) {
-        value = year;
-    }
-    event.target.value = value;
-});
+// inputs[2].addEventListener('input', function (event) {
+//     let value = event.target.value;
+//     // Ensure the value is not less than 1
+//     if (value == 0) {
+//         value = 1;
+//     }
+//     // Ensure the value is not greater than the current year
+//     if (value < 2022) {
+//         value = 2022;
+//     }
+//     else if (value > year) {
+//         value = year;
+//     }
+//     event.target.value = value;
+// });
 
-// get the current date
+// Function to check for leap year
+function isLeapYear(year) {
+    return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
+}
+
+// Get the current date
 const now = new Date();
 let year = now.getFullYear();
 let month = now.getMonth() + 1;
 let day = now.getDate();
 
-//  calculate age from birthdate
+// Calculate age from birthdate
 function calculateAge(birthdate) {
     const now = new Date();
     const birth = new Date(birthdate);
@@ -85,25 +90,65 @@ function calculateAge(birthdate) {
     return age;
 }
 
-// get elements for displaying calculated age
+// Get elements for displaying calculated age
 const years = document.querySelector("#years");
 const months = document.querySelector("#months");
 const days = document.querySelector("#days");
 const button = document.getElementById("button");
 
-// event listener for the button click
+// Event listener for the button click
 button.addEventListener('click', function () {
     let isEmpty = false;
+    let isInvalid = false;
+    let selectedYear = parseInt(inputs[2].value);
+    let selectedMonth = parseInt(inputs[1].value);
+    let selectedDay = parseInt(inputs[0].value);
+
     // Check if any input is empty
     inputs.forEach(function (input) {
         if (input.value.trim() === '') {
             isEmpty = true;
-            input.nextSibling.nextSibling.innerHTML = "please enter a number";
+            input.nextSibling.nextSibling.innerHTML = "Please enter a number";
             input.style.border = "1px solid red";
         }
     });
-    // If all inputs are filled, calculate and display age
-    if (!isEmpty) {
+
+    // Check for invalid month (greater than 12)
+    if (selectedMonth > 12) {
+        isInvalid = true;
+        inputs[1].nextSibling.nextSibling.innerHTML = "Invalid month";
+        inputs[1].style.border = "1px solid red";
+    }
+
+    // Check for invalid day for the selected month
+    if (selectedYear < year || (selectedYear === year && selectedMonth <= month)) {
+        const daysInSelectedMonth = new Date(selectedYear, selectedMonth, 0).getDate();
+        if (selectedDay > daysInSelectedMonth || selectedDay > 31) {
+            isInvalid = true;
+            inputs[0].nextSibling.nextSibling.innerHTML = "Invalid day for the selected month";
+            inputs[0].style.border = "1px solid red";
+        }
+    }
+
+
+    //  // Check for invalid day for the selected month
+    //  if (selectedYear < year || (selectedYear === year && selectedMonth <= month)) {
+    //     const daysInSelectedMonth = new Date(selectedYear, selectedMonth, 0).getDate();
+    //     if (selectedDay > daysInSelectedMonth || selectedDay > 31) {
+    //         isInvalid = true;
+    //         inputs[0].nextSibling.nextSibling.innerHTML = "Invalid day";
+    //         inputs[0].style.border = "1px solid red";
+    //     }
+    // }
+
+    // Check for a future date
+    if (selectedYear > year || (selectedYear === year && selectedMonth > month)) {
+        isInvalid = true;
+        inputs[2].nextSibling.nextSibling.innerHTML = "Future date is not allowed";
+        inputs[2].style.border = "1px solid red";
+    }
+
+    if (!isEmpty && !isInvalid) {
         for (let i = 0; i < inputs.length; i++) {
             inputs[i].nextSibling.nextSibling.innerHTML = "";
             inputs[i].style.border = "1px solid #ececec";
