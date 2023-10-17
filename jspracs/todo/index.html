@@ -6,13 +6,32 @@
 
     <link rel="stylesheet" href="/jspracs/todo/style.css"></head>
 <body>
-    <h1>Todo List</h1>
+    <div class="main-area">
+        
+        <h4>Todo List</h4>
+        <div class="input-section">
+            <input class="todo-now" type="text" id="todoInput" placeholder="Enter a new Todo">
+            <button class="add" onclick="addTodo()">Add</button>
 
-    <input type="text" id="todoInput" placeholder="Enter a new Todo">
-    <button onclick="addTodo()">Add</button>
+        </div>
 
-    <ul id="todoList"></ul>
 
+        <div class="the-task-list">
+            <h5>My Tasks</h5>
+            <ul id="todoList"></ul>
+        </div>
+
+
+        <div class="completee">
+            <h5>Completed Tasks</h5>
+            <ul id="completedTasks"></ul>
+        </div>
+        
+
+
+
+    </div>
+    
     
 </body>
 </html>
