@@ -8,6 +8,7 @@
 
 .body{
     background-color: yellow;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -23,6 +24,7 @@
     /* align-items: center; */
     /* display: flex; */
     flex-wrap: wrap;
+    align-items: center;
 
     top: 55%;
 
@@ -81,6 +83,7 @@
     color: black;
 
     background-color:aqua;
+    font-size: 3rem;
     
 
 }
@@ -93,20 +96,27 @@
 
     color: #fff;
 
-    width: 80px;
-    margin-bottom: 14px;
+    width: 100px;
+    margin-bottom: 15px;
+    margin-left: 80px;
     justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    
 
     height: 40px;  
     align-items: center;
 
 }
-
+/* 
 .tb{
     display: flex;
     align-items: center;
     justify-content: center;
-}
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    /* background-color: yellow; */
+/* }  */ */
 
 
 .equal-sign {
@@ -135,11 +145,12 @@
 
     font-size: medium;
 
-    width: 50%;
+    width: 70%;
 
     height: 30%;
 
     cursor: default;
+    border-radius: 5px;
 
     padding: 10px; 
 
@@ -149,3 +160,12 @@
 
 }
 
+@media screen and (max-width:400px){
+    .maincalc{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        flex-direction: direction;
+    }
+    
+} 

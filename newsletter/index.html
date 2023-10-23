@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+
+  <title>Newsletter and success message </title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+  <body>
+
+      <!-- Sign-up form start -->
+
+    <div class="container">
+      <div class="sub-container" id="sub-containers">
+        <div class="sub-section1">
+          <div class="main-heading">
+            <h1>Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+          </div>
+
+          <div class="updates">
+            <div class="updates1">
+              <img src="images/icon-list.svg" alt="list-icon" />
+              <span> Products discovery and building what matters </span>
+            </div>
+            <div class="updates1">
+              <img src="images/icon-list.svg" alt="list-icon" />
+              <span>Measuring to ensure updates are a success</span>
+            </div>
+            <div class="updates1">
+              <img src="images/icon-list.svg" alt="list-icon" />
+              <span>And much more!</span>
+            </div>
+          </div>
+
+
+          
+
+          <div class="sign-up-form">
+            <div class="sign-up">
+              <label for="email">Email address</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="mail"
+                placeholder="email@company.com"
+                autocomplete="off" />
+
+              <button type="submit" id="subscribe">
+                Subscribe to monthly newsletter
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="sub-section2">
+          <img
+            class="desktop-illustration"
+            src="images/illustration-sign-up-desktop.svg"
+            alt="sign-up-desktop-illustration" />
+          <img
+            src="images/illustration-sign-up-mobile.svg"
+            alt="sign-up-mobile-illustration"
+            srcset=""
+            class="mobile-illustration" />
+        </div>
+      </div>
+    </div>
+    <div class="thanks-sub" id="thanks">
+      <div class="thanks-sub1" id="thanks-subs">
+        <div class="thanks-img">
+          <img src="images/icon-success.svg" alt="success-icon" />
+        </div>
+
+        <div class="message">
+          <h1>Thanks for subscribing</h1>
+          <p id="confirmMessage"></p>
+          <button type="submit" class="dismiss" id="dismissMessage">
+            Dismiss message
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/newsletter/dist/main.js"></script>
+  </body>
+
+ 
+
+
+  <!-- Stay updated!
+
+  Join 60,000+ product managers receiving monthly updates on:
+
+  Product discovery and building what matters
+  Measuring to ensure updates are a success
+  And much more!
+
+  Email address
+  email@company.com
+
+  Subscribe to monthly newsletter -->
+
+
+  <!-- Success message start -->
+
+  <!-- Thanks for subscribing!
+
+  A confirmation email has been sent to ash@loremcompany.com. 
+  Please open it and click the button inside to confirm your subscription.
+
+  Dismiss message -->
+
+  <!-- Success message end -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Eric Kyalo</a>.
+  </div>
+</html>

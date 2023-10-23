@@ -1,0 +1,158 @@
+
+
+body {
+    background-color: hsl(235, 18%, 26%);
+}
+
+/*container styling starts*/
+.container {
+    max-width: 800px;
+    margin: 60px auto;
+    background-color:  hsl(0, 0%, 100%);
+    border-radius: 25px;
+}
+
+/*container styling ends*/
+
+/*sub-container styling starts*/
+.sub-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.sub-container div {
+    flex: 1;
+    margin: 0;
+}
+
+.desktop-illustration {
+    width: 300px;
+}
+
+.sub-section1 {
+    padding: 70px;
+}
+
+h1 {
+    font-family:Roboto;
+    font-weight: 700;
+    font-size: 40px;
+    color: hsl(234, 29%, 20%);;
+}
+
+p {
+    word-break: keep-all;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 400;
+}
+
+
+.updates1 {
+    margin: 5px;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 400;
+    color: hsl(234, 29%, 20%);;
+}
+
+span {
+    margin-left: 5px;
+}
+
+.sub-section2 {
+    padding: 30px;
+}
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.sign-up-form {
+    padding: 10px;
+}
+
+label {
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 700;
+    color: hsl(234, 29%, 20%);;
+}
+
+input {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+input::placeholder {
+    color: hsl(231, 7%, 60%);
+    font-weight: 400;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: hsl(234, 29%, 20%);;
+    color:  hsl(0, 0%, 100%);
+    font-weight: 400;
+    font-size: 14px;
+    font-family: Roboto;
+}
+
+button:hover {
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 0 0 11px 0px hsl(4, 100%, 67%);
+    cursor: pointer;
+}
+
+.dismiss {
+    padding: 10px;
+    width: 300px;
+    text-align: center;
+    margin: auto;
+}
+
+#confirmMessage {
+    color: hsl(234, 29%, 20%);;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight:400;
+    line-height: 2;
+}
+
+.dismiss:hover {
+    background-color: hsl(4, 100%, 67%);
+    box-shadow: 0 0 11px 0px hsl(4, 100%, 67%);
+    cursor: pointer;
+}
+
+.thanks-sub {
+    max-width: 380px;
+    margin: 10px auto;
+    display: none;
+}
+
+.thanks-sub1 {
+    background-color:  hsl(0, 0%, 100%);
+    margin: 10px;
+    padding: 20px;
+    border-radius: 15px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+.mobile-illustration {
+    display: none;
+}
+
+@media screen and (max-width: 375px) {
+    .sub-container {
+        display: block;
+    }
+}
